@@ -75,7 +75,8 @@ table {
     
     /* start */
     html {
-		font-size: 16pt;
+        font-size: 16pt;
+        width: 100%;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -184,6 +185,7 @@ table {
 
 /* Wrapper */
 #wrapper{
+    
     display: flex;
     flex-direction: column;
     margin: 10rem;
@@ -191,10 +193,11 @@ table {
     /* border: solid black 2px; */
 }
 
+
+
 /* Header Nav */
 .header-nav{
     display:flex;
-    
 }
 nav{
     align-content: flex-end;
@@ -211,11 +214,11 @@ nav{
     line-height: 1.1;
     margin: 2rem;
     background-color: #9fd3c7;
-    width: 100%; 
+   max-width: 100%; 
     height:inherit; 
     position: relative;; 
     top:10px; 
-    z-index: 1
+    z-index: 3
     /* border: solid rgb(187, 10, 218) 2px; */
 }
 
@@ -223,9 +226,7 @@ nav{
 /* Main */
 
 /* Featured Post */
-#main{
-    /* border: solid blue 3px; */
-}
+
 .major{
     display:flex;
     flex-direction: column;
@@ -233,7 +234,7 @@ nav{
     /* border: solid yellow 3px; */
 }
 /* Images */
-img{
+img.tips{
     width: 50rem;
         margin: 5rem;
     }
@@ -259,3 +260,19 @@ img{
     font-size: 16px;
 
 }
+ /*About Page  */
+
+img{
+     border-radius: 50%;
+     height:5rem;
+ }
+ .crew{
+     display:flex;
+    flex-wrap:wrap;
+ }
+
+ .team{
+     width:50%;
+     height: inherit
+     ;
+ }
