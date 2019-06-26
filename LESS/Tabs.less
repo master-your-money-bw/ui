@@ -8,12 +8,24 @@
   @media (min-width: 1280px) {
     width: 1280px;
   }
+  @media@mobile {
+    height: 7rem;
+  }
+
   .topics {
-    .flex(none, center);
+    .flex(center, center);
+    @media@mobile {
+      flex-wrap: wrap;
+      width: 80%;
+    }
     .title {
       font-size: 1.4rem;
       letter-spacing: 1px;
       font-weight: bold;
+      @media@mobile {
+        width: 100%;
+        text-align: center;
+      }
     }
     .tab {
       .flex(none, center);
@@ -26,6 +38,11 @@
       letter-spacing: 2px;
       cursor: pointer;
       font-weight: bold;
+      @media@mobile {
+        text-align: center;
+        margin-bottom: 1%;
+      }
+
       &:hover {
         text-decoration: underline;
       }

@@ -8,6 +8,10 @@
   @media (min-width: 1280px) {
     width: 1280px;
   }
+  @media@mobile {
+    .flex(space-between, center, column);
+    height: 16rem;
+  }
   h1 {
     font-size: 3rem;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -27,6 +31,11 @@
     font-weight: bold;
     padding: 0 2% 0 2%;
     margin-bottom: 1rem;
+    @media@mobile {
+      width: 80%;
+      .flex(space-around, center);
+    }
+
     //margin-right: 8%;
     a {
       text-decoration: none;

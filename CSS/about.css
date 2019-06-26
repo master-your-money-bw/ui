@@ -159,6 +159,15 @@ body {
     width: 1280px;
   }
 }
+@media (max-width:500px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 16rem;
+  }
+}
 .header h1 {
   font-size: 3rem;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -181,6 +190,15 @@ body {
   font-weight: bold;
   padding: 0 2% 0 2%;
   margin-bottom: 1rem;
+}
+@media (max-width:500px) {
+  .header nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 .header nav a {
   text-decoration: none;
@@ -206,16 +224,33 @@ body {
     width: 1280px;
   }
 }
+@media (max-width:500px) {
+  .tabs {
+    height: 7rem;
+  }
+}
 .tabs .topics {
   display: flex;
-  justify-content: none;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+@media (max-width:500px) {
+  .tabs .topics {
+    flex-wrap: wrap;
+    width: 80%;
+  }
 }
 .tabs .topics .title {
   font-size: 1.4rem;
   letter-spacing: 1px;
   font-weight: bold;
+}
+@media (max-width:500px) {
+  .tabs .topics .title {
+    width: 100%;
+    text-align: center;
+  }
 }
 .tabs .topics .tab {
   display: flex;
@@ -231,6 +266,12 @@ body {
   letter-spacing: 2px;
   cursor: pointer;
   font-weight: bold;
+}
+@media (max-width:500px) {
+  .tabs .topics .tab {
+    text-align: center;
+    margin-bottom: 1%;
+  }
 }
 .tabs .topics .tab:hover {
   text-decoration: underline;
