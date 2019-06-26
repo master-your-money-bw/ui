@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./mixins";
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
 * {
   box-sizing: border-box;
@@ -14,12 +15,12 @@ body {
 
 body {
   .flex(none, center, column);
-  background-color: @lambda-times-color-background;
+  background-color: @MYM-color-background;
   color: @MYM-color-primary;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Merriweather", Georgia, serif;
 }
 
-@import "./components/TopBar/TopBar";
-@import "./components/Header/Header";
-@import "./components/Tabs/Tabs";
-@import "./components/Cards/Cards";
+@import "./TopBar";
+@import "./Header";
+@import "./Tabs";
+@import "./Cards";
