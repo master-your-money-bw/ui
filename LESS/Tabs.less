@@ -1,20 +1,22 @@
 .tabs {
   .border-bottom-grey();
   .flex(center, center);
-  .width-100();
+  width: 90%;
   height: 47px;
   background-color: @MYM-color-white;
   margin-top: 1.5%;
-  @media (min-width: 1280px) {
-    width: 1280px;
+
+  @media@tablet {
+    .width-100();
+    height: 7rem;
   }
   @media@mobile {
-    height: 7rem;
+    height: 9rem;
   }
 
   .topics {
     .flex(center, center);
-    @media@mobile {
+    @media@tablet {
       flex-wrap: wrap;
       width: 80%;
     }
@@ -22,7 +24,7 @@
       font-size: 1.4rem;
       letter-spacing: 1px;
       font-weight: bold;
-      @media@mobile {
+      @media@tablet {
         width: 100%;
         text-align: center;
       }
@@ -38,7 +40,7 @@
       letter-spacing: 2px;
       cursor: pointer;
       font-weight: bold;
-      @media@mobile {
+      @media@tablet {
         text-align: center;
         margin-bottom: 1%;
       }
