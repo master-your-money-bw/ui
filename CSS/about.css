@@ -145,10 +145,11 @@ body {
 }
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   flex-direction: row;
   background-color: #fff;
+  border-bottom: 1px solid lightgrey;
   width: 100%;
   height: 12rem;
   margin-top: 2rem;
@@ -161,7 +162,7 @@ body {
 .header h1 {
   font-size: 3rem;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  width: 60%;
+  width: 70%;
   font-weight: 900;
   text-align: center;
   color: #385174;
@@ -172,10 +173,10 @@ body {
 }
 .header nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-end;
   flex-direction: row;
-  width: 40%;
+  width: 30%;
   font-size: 3 rem;
   font-weight: bold;
   padding: 0 2% 0 2%;
@@ -198,6 +199,7 @@ body {
   width: 100%;
   height: 47px;
   background-color: #fff;
+  margin-top: 1.5%;
 }
 @media (min-width: 1280px) {
   .tabs {
@@ -211,7 +213,7 @@ body {
   flex-direction: row;
 }
 .tabs .topics .title {
-  font-size: 12px;
+  font-size: 1.4rem;
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -220,6 +222,7 @@ body {
   justify-content: none;
   align-items: center;
   flex-direction: row;
+  border-radius: 4rem;
   color: #fff;
   background-color: #385174;
   margin: 0 5px;
@@ -233,6 +236,7 @@ body {
   text-decoration: underline;
 }
 .tabs .topics .active-tab {
+  border-radius: 4rem;
   background-color: #fff;
   color: #385174;
   border: 2px solid #385174;
