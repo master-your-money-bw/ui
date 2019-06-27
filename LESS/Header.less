@@ -1,6 +1,6 @@
 .header {
   .flex(space-around, flex-end);
-  background-color: @MYM-color-white;
+  background-color: @MYM-color-primary;
   .border-bottom-grey();
   width: 90%;
   height: 12rem;
@@ -18,7 +18,8 @@
     width: 70%;
     font-weight: 900;
     text-align: center;
-    color: @MYM-color-primary;
+    //color: @MYM-color-primary;
+    color: @MYM-color-white;
     line-height: 3rem;
     letter-spacing: 0.075em;
     text-transform: uppercase;
@@ -38,13 +39,13 @@
     }
     @media@mobile {
       .flex(space-around, center);
-      
+    }
 
     //margin-right: 8%;
     a {
       text-decoration: none;
-      color: white;
-      background-color: @MYM-color-primary;
+      color: @MYM-color-primary;
+      background-color: @MYM-color-white;
       padding-top: 3%;
       border-radius: 0.5rem;
       width: 35%;
