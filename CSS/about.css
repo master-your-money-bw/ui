@@ -312,6 +312,7 @@ body {
   width: 380px;
   margin-bottom: 16px;
   padding: 24px;
+  border-radius: 15px;
 }
 .cards-container .card .headline {
   font-size: 25px;
