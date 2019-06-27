@@ -148,7 +148,7 @@ body {
   justify-content: space-around;
   align-items: flex-end;
   flex-direction: row;
-  background-color: #fff;
+  background-color: #385174;
   border-bottom: 1px solid lightgrey;
   width: 90%;
   height: 12rem;
@@ -170,7 +170,7 @@ body {
   width: 70%;
   font-weight: 900;
   text-align: center;
-  color: #385174;
+  color: #fff;
   line-height: 3rem;
   letter-spacing: 0.075em;
   text-transform: uppercase;
@@ -178,10 +178,11 @@ body {
 }
 .header nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: flex-end;
-  flex-direction: row;
+  flex-direction: column;
   width: 30%;
+  height: 80%;
   font-size: 3 rem;
   font-weight: bold;
   padding: 0 2% 0 2%;
@@ -189,7 +190,7 @@ body {
 }
 @media (max-width:1090px) {
   .header nav {
-    width: 60%;
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,16 +203,29 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    width: 75%;
   }
 }
 .header nav a {
   text-decoration: none;
   color: #385174;
-  margin-left: 3%;
+  background-color: #fff;
+  padding-top: 3%;
+  border-radius: 0.5rem;
+  width: 35%;
+  height: 35%;
+  margin: 1%;
+  text-align: center;
+}
+@media (max-width:1090px) {
+  .header nav a {
+    height: 100%;
+    width: 35%;
+    margin-left: 3%;
+    padding: 1%;
+  }
 }
 .header nav a:hover {
-  color: #829dc3;
+  background-color: #829dc3;
 }
 .tabs {
   border-bottom: 1px solid lightgrey;

@@ -45,10 +45,15 @@ class TabCard {
 
 let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
 
-let header = document.querySelector(".header");
-header.addEventListener("mouseenter", () => {
-  TweenMax.to(".header h1", 3, { rotationY: 360 });
-});
-header.addEventListener("mouseleave", () => {
-  TweenMax.to(".header h1", 3, { rotationX: 360 });
+let header = document.querySelector(".header h1");
+// i = 1;
+// header.addEventListener("mouseover", () => {
+//   let x = TweenMax.to(".header h1", 1, { rotationY: 360 * i });
+//   i++;
+//   x.invalidate();
+//   x.restart();
+// });
+
+header.addEventListener("mouseover", () => {
+  TweenMax.fromTo(header, 1, { rotationY: 0 }, { rotationY: 360 });
 });
