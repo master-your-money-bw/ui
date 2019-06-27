@@ -44,3 +44,11 @@ class TabCard {
 }
 
 let tabs = document.querySelectorAll(".tab").forEach(tab => new TabLink(tab));
+
+let header = document.querySelector(".header");
+header.addEventListener("mouseenter", () => {
+  TweenMax.to(".header h1", 3, { rotationY: 360 });
+});
+header.addEventListener("mouseleave", () => {
+  TweenMax.to(".header h1", 3, { rotationX: 360 });
+});
