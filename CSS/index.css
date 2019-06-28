@@ -248,6 +248,11 @@ p {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .nav-f {
+    flex-direction: column;
+  }
+}
 #myAnimation {
   animation-duration: 3.9s;
   animation-name: slidein;
