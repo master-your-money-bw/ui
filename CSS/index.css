@@ -165,9 +165,10 @@ h1 {
   width: 5rem;
 }
 h2 {
-  font-size: 1.75rem;
+  font-size: 3rem;
   line-height: 1.3;
   margin: 0 0 1.5rem 0;
+  text-align: center;
 }
 h3 {
   font-size: 1.25rem;
@@ -175,7 +176,7 @@ h3 {
 }
 p {
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 1.8;
 }
 .container {
   max-width: 800px;
@@ -235,11 +236,16 @@ p {
   padding: 15px;
 }
 .section-foot {
+  width: 100%;
   background-color: whitesmoke;
 }
 .footer-nav {
+  align-items: center;
   background-color: whitesmoke;
   margin: 15px;
+}
+.nav-f {
+  align-items: center;
 }
 /* Intro */
 #intro {
