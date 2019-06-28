@@ -245,7 +245,36 @@ p {
   margin: 15px;
 }
 .nav-f {
-  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#myAnimation {
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.online {
+  animation-duration: 4s;
+  animation-name: slideintwo;
+}
+@keyframes slideintwo {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
 }
 /* Intro */
 #intro {
@@ -261,11 +290,7 @@ p {
   top: 10px;
   z-index: 3;
   flex-wrap: wrap;
-  /* border: solid rgb(187, 10, 218) 2px; */
 }
-/* Nav */
-/* Main */
-/* Featured Post */
 .post {
   display: flex;
   flex-direction: column;
@@ -280,7 +305,6 @@ a {
   flex-direction: column;
   align-items: center;
   margin-top: 47px;
-  /* border: solid yellow 3px; */
 }
 /* Images */
 img {

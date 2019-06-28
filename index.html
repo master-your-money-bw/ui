@@ -10,10 +10,10 @@
     <title>Master Your Money</title>
 
     <link rel="stylesheet" href="./CSS/index.css" />
-    <!-- <link rel="stylesheet/less" type="text/css" href="less/index.less" /> -->
 
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900" rel="stylesheet" />
+
+    <script src="./JavaScript/pie.js" async></script>
 
 </head>
 
@@ -24,7 +24,8 @@
 
         <!-- Header Nav -->
         <section class="nav-container">
-            <h1>Master Your<br />
+
+            <h1 class="headers">Master Your<br />
                 Money</h1>
             <nav class="nav">
                 <a href="index.html" class="button">Home</a>
@@ -42,13 +43,14 @@
         <!-- Featured Post -->
         <article class="post">
             <header class="major">
-                <h2><a href="#">An Easier Way to<br />
+                <h2 id="myAnimation"><a href="#">An Easier Way to<br />
                         Master Your Money</a></h2>
-                    <p><p>Master Your Money is an online budgeting tool to helps people manage their money like a boss.<br>
+                <div class="online"> 
+                    <p>Master Your Money is an online budgeting tool to helps people manage their money like a boss.<br>
                         Build for people who refuse to settle for an average budgeting app.<br>
-                         People who are masters. People like you.
-                   </p>
+                        People who are masters. People like you.
                     </p>
+                </div>
             </header>
             <a href="#" class="image main"><img src="images/goals.png" alt="goal" /></a>
 
@@ -58,87 +60,84 @@
         <div id="intro">
 
 
-             <img src="images/modernpro.png" class="pro" alt="pro" />
+            <img src="images/modernpro.png" class="pro" alt="pro" />
             <div class="p1">
 
-            <p><p>Figure out your financial goals:<br>
+                <p>
+                    <p>Figure out your financial goals:<br>
 
-                We will ask you some queestions to kick off your new financial future, and help you make better buying decisions.<br>
-                
-                Get a sense of your financial picture:<br>
-                
-                depending on your goals, we will recommend what you shoud save, and what you should spend. Get unique insight to your financial future.<br>
-                
-                Take Control of your money now  <br>
-                Become a Master of your money.
-                </p></p>
+                        We will ask you some queestions to kick off your new financial future, and help you make better
+                        buying decisions.<br>
+
+                        Get a sense of your financial picture:<br>
+
+                        depending on your goals, we will recommend what you shoud save, and what you should spend. Get
+                        unique insight to your financial future.<br>
+
+                        Take Control of your money now <br>
+                        Become a Master of your money.
+                    </p>
+                </p>
             </div>
             <div class="chartjs-size-monitor-shrink">
-                
 
 
-            <form class="email-capture" data-action="#">
-                <div class="email-capture__input-val">
-                    <input class="email-capture__input" type="email" name="user[email]"
-                        placeholder="Enter your email">
-                    <div class="email-capture-error email-capture__validation"></div>
+
+                <form class="email-capture" data-action="#">
+                    <div class="email-capture__input-val">
+                        <input class="email-capture__input" type="email" name="user[email]"
+                            placeholder="Enter your email">
+                        <div class="email-capture-error email-capture__validation"></div>
+                    </div>
+                    <input class="btn email-capture__submit email-capture-submit" type="submit" value="Get Started">
+                    <input type="hidden" name="ph_tid" value="">
+                </form>
+
+            </div>
+
+
+            <div id="intro-extend">
+
+
+                <img src="images/predict.png" alt="pro" />
+                <h2 class ="about">About</h2>
+                <p>
+                    Our website takes in data such as income, age, and spending on major categories like housing,
+                    transportation, food, clothing, luxuries. Then, it runs a regression model. It takes in the data
+                    from consumers across the US and provides an output to the consumer on how much their spending
+                    should be based on the demographics and income information they provided.</br> The information
+                    provided will a visualization of your spending to help improve your budgeting.
+                </p>
+
+                <div class="chartjs-size-monitor-shrink">
+                    <div class=""></div>
+                    <img src="images/mobile.png" alt="prediction" />
                 </div>
-                <input class="btn email-capture__submit email-capture-submit" type="submit" value="Get Started">
-                <input type="hidden" name="ph_tid" value="">
-            </form>
 
-        </div>
 
-        <!-- Main -->
-        <!-- <div id="main"> -->
-            <!-- Possible Pie chart -->
-            <!-- <div>
-                really reandom
             </div>
-        </div>
-        Cool Testimonial Thing? -->
+            <!-- Footer -->
+            <section class="section-foot">
+                <div id="footer">
+                    <h2>Become A Master of Your Money</h2>
 
-        <!-- Intro -->
+                    <p>Take control of your money. Start Budgeting Better.
+                    </p>
+                </div>
+                <div class="footer-nav">
+                    <nav class="nav-f">
+                        <a href="index.html" class="button">Home</a>
 
-        <div id="intro-extend">
+                        <a href="https://master-your-money.netlify.com/login" class="button">Sign In</a>
 
+                        <a href="https://master-your-money.netlify.com/register" class="button">Create an Account</a>
 
-            <img src="images/predict.png" alt="pro" />
+                        <a href="about.html" class="button">About</a>
 
-            <p>
-                About </br>
-                Our website takes in data such as income, age, and spending on major categories like housing, transportation, food, clothing, luxuries. Then, it runs a regression model. It takes in the data from consumers across the US and provides an output to the consumer on how much their spending should be based on the demographics and income information they provided.</br> The information provided will  a visualization of your spending to help improve your budgeting.
-            </p>
-
-            <div class="chartjs-size-monitor-shrink">
-                <div class=""></div>
-                <img src="images/mobile.png" alt="prediction" />
-            </div>
-
-
-        </div>
-        <!-- Footer -->
-        <section class="section-foot">
-        <div id="footer">
-            <h2>Become A Master of Your Money</h2>
-
-            <p>Take control of your money. Start Budgeting Better.
-            </p>
-</div>
-    <div class="footer-nav">
-        <nav class="nav-f">
-            <a href="index.html" class="button">Home</a>
-
-            <a href="https://master-your-money.netlify.com/login" class="button">Sign In</a>
-
-            <a href="https://master-your-money.netlify.com/register" class="button">Create an Account</a>
-
-            <a href="about.html" class="button">About</a>
-
-        </nav>
+                    </nav>
 
 
-        </div>
-        </section>
+                </div>
+            </section>
 
 </body>
