@@ -249,7 +249,7 @@ p {
   justify-content: center;
 }
 #myAnimation {
-  animation-duration: 4s;
+  animation-duration: 3.9s;
   animation-name: slidein;
 }
 @keyframes slidein {
@@ -263,7 +263,7 @@ p {
   }
 }
 .online {
-  animation-duration: 4s;
+  animation-duration: 3.9s;
   animation-name: slideintwo;
 }
 @keyframes slideintwo {
